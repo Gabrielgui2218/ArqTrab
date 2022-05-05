@@ -31,47 +31,47 @@ public class JavaApplication3 {
                 A = sc.nextInt();
                 break;
            case 2:
-            System.out.println("Defina o registrador B: ");
-            B = sc.nextInt();
+                System.out.println("Defina o registrador B: ");
+                B = sc.nextInt();
                 break;
            case 3:
-            System.out.println("O registrador A é: " + A);
+                System.out.println("O registrador A é: " + A);
                 break;
             case 4:
-            System.out.println("O registrador B é: " + B);
+                System.out.println("O registrador B é: " + B);
                 break;
             case 5:
-            System.out.println("O Flag é: ");
-            if(A + B > 0){
-                System.out.println("O Flag é OVERFLOW");
-            }else if(A - B == 0){
-                System.out.println("O Flag é ZERO BIT = TRUE");
-            } else if (A < B){
-                System.out.println("O Flag é NEGATIVE");
-            } else{
-                System.out.println("Erro na flag");
-            }       
-                break;
+                System.out.println("O Flag é: ");
+                if(A + B > 0){
+                    System.out.println("O Flag é OVERFLOW");
+                }else if(A - B == 0){
+                    System.out.println("O Flag é ZERO BIT = TRUE");
+                } else if (A < B){
+                    System.out.println("O Flag é NEGATIVE");
+                } else{
+                    System.out.println("Erro na flag");
+                }       
+                    break;
             case 6:
-            System.out.println("Defina a operação: 1- Soma, 2- Subtração, 3- multiplicação, 4- divisão");
-            escolha2 = sc.nextInt();
-            if (escolha2 == 1){
-                ula = A + B;
-            }
-            else if(escolha2 == 2){
-                ula = A - B;
-            }
-            else if(escolha2 == 3){
-                ula = A * B;
-            }
-            else if(escolha2 == 4){
-                ula = A / B;
-            }
-            else{
-                System.out.println("Valor incorreto");
-            }    
+                System.out.println("Defina a operação: 1- Soma, 2- Subtração, 3- multiplicação, 4- divisão");
+                escolha2 = sc.nextInt();
+                if (escolha2 == 1){
+                    ula = A + B;
+                }
+                else if(escolha2 == 2){
+                    ula = A - B;
+                }
+                else if(escolha2 == 3){
+                    ula = A * B;
+                }
+                else if(escolha2 == 4){
+                    ula = A / B;
+                }
+                else{
+                    System.out.println("Valor incorreto");
+                }    
             case 7:
-            System.out.println("ULA =" + ula);
+                System.out.println("ULA =" + ula);
                 break;           
         }
         }while (escolha != 8);
